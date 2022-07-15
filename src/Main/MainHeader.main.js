@@ -1,4 +1,4 @@
-const MainHeader = () => {
+const MainHeader = ({change_page}) => {
     
     const HeaderStyle = {
         'display': 'grid',
@@ -38,7 +38,7 @@ const MainHeader = () => {
                     </ul>
                 </div>
                 <div style={{display: "block", margin: "auto"}}>
-                    <a style={BtnStyle}>Book A Table</a>
+                    <a style={BtnStyle} onClick={() => {change_page("order")}}>Book A Table</a>
                 </div>
             </div>
         </>
