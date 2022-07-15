@@ -15,7 +15,7 @@ const Main = () => {
         <>
             <div>
                 <MainHeader change_page = {change_page} />
-                <MainBody curpage = {curpage} />
+                <MainBody curpage = {curpage} change_page={change_page} />
                 <MainFooter />
             </div>
             
