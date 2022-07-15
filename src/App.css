@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.nav {
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #2c3033 !important;
+  font-size: 16px;
+  font-family: "Lora"
+}

@@ -14,7 +14,7 @@ const LandingPage = () => {
     }
 
     useEffect(() => {
-        fetch('/get_landing_page_items').then((res) => {
+        fetch('localhost:8000/get_landing_page_items').then((res) => {
             const data = res.json();
             setItems(items => [...items, data])
         })
@@ -23,17 +23,17 @@ const LandingPage = () => {
     return (
         <>
             <div style={gridContainer}>
-                {items.map((item, index) => {
+                {/* {items.map((item, index) => {
                     return (
                         <FoodListItem key={index} title={item.item_title} description={item.item_description} salary={item.item_price} />    
                     )
-                })}
-                {/* <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />
+                })} */}
                 <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />
                 <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />
                 <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />
                 <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />
-                <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />                 */}
+                <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />
+                <FoodListItem title={"This is First item."} description={"This is First item description."} salary={40.00} />                
             </div>
         </>
     )
